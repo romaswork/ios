@@ -38,6 +38,11 @@
                                     <segue destination="2fD-Rv-ntm" kind="modal" id="3aa-BZ-7gT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version #1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgl-wL-QUn">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -46,13 +51,15 @@
                             <constraint firstItem="HIg-xk-mNm" firstAttribute="top" secondItem="PNo-ZM-5Bu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="F6u-Ob-ENP"/>
                             <constraint firstAttribute="trailing" secondItem="PNo-ZM-5Bu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="KDk-Xq-jLL"/>
                             <constraint firstItem="HIg-xk-mNm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dTd-D8-hbJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Dgl-wL-QUn" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="kuz-J8-ewj"/>
                             <constraint firstItem="PNo-ZM-5Bu" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="lHM-C0-Vzs"/>
+                            <constraint firstAttribute="trailing" secondItem="Dgl-wL-QUn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tYk-Gh-14T"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="65"/>
+            <point key="canvasLocation" x="-104" y="-41"/>
         </scene>
         <!--Tweet View Controller-->
         <scene sceneID="xQs-2I-b9D">
@@ -169,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcM-xQ-Xcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640" y="319"/>
+            <point key="canvasLocation" x="502" y="213"/>
         </scene>
         <!--User View Controller-->
         <scene sceneID="S0b-hI-TfV">
@@ -271,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cjd-U9-I0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640" y="-405"/>
+            <point key="canvasLocation" x="502" y="-511"/>
         </scene>
     </scenes>
     <classes>
