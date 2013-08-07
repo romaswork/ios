@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface tweet : NSObject
+@interface Tweet : NSObject
 
-@property (nonatomic, weak) NSDate *date_create;
-@property (nonatomic) NSInteger tweet_id;
+@property (nonatomic, weak) NSDate *dateCreate;
+@property (nonatomic) NSInteger tweetId;
 @property (nonatomic) NSString *text;
 @property (nonatomic) NSString *location;
 @property (nonatomic) NSString *author;
 
--(id)init:(NSDate *)date : (NSInteger)tweet_id : (NSString *)text : (NSString *)location : (NSString *)author;
+-(id)init:(NSDate *)date : (NSInteger)tweetId : (NSString *)text : (NSString *)location : (NSString *)author;
 -(NSString *)DateToString;
 @end

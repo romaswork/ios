@@ -8,21 +8,24 @@
 
 #import "user.h"
 
-@implementation user
+@implementation User
 
--(id)init:(NSDate *)date_reg : (NSString *)name : (NSInteger)uid : (NSString *)photo_link {
-    self.user_date_reg = date_reg;
-    self.user_name = name;
-    self.user_id = uid;
-    self.user_photo_link = photo_link;
+-(instancetype)init:(NSDate *)dateReg : (NSString *)name : (NSInteger)uid : (NSString *)photoLink {
+    self = [super init];
+    if(self) {
+        self.userDateReg = dateReg;
+        self.userName = name;
+        self.userId = uid;
+        self.userPhotoLink = photoLink;
+    }    
     return self;
 }
 
 -(NSString *)DateToString {
     NSDateFormatter *inFormat = [[NSDateFormatter alloc] init];
     [inFormat setDateFormat:@"MMM dd, yyyy"];
-    NSString *temp_str = [inFormat stringFromDate:self.user_date_reg];
-    return temp_str;
+    NSString *tempStr = [inFormat stringFromDate:self.userDateReg];
+    return tempStr;
 }
 
 @end

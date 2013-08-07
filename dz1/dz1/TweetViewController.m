@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
 	
-    tweet * MyTweet = [[tweet alloc] init:[NSDate date] :555 :@"Hello, World!" :@"Bryansk" :@"Roman"];
+    Tweet * MyTweet = [[Tweet alloc] init:[NSDate date] :555 :@"Hello, World!" :@"Bryansk" :@"Roman"];
     [self ShowTweet:MyTweet];
 }
 
@@ -37,12 +37,13 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)ShowTweet:(tweet *)myTweet {
-    self->tweet_date_create_label.text = [myTweet DateToString];
-    self->tweet_id_label.text = [NSString stringWithFormat:@"%d", myTweet.tweet_id];
-    self->tweet_text_label.text = myTweet.text;
-    self->tweet_location_label.text = myTweet.location;
-    self->tweet_author_label.text = myTweet.author;
+-(void)ShowTweet:(Tweet *)myTweet {
+    
+    self.tweetDateCreateLabel.text = [myTweet DateToString];
+    self.tweetIdLabel.text = [NSString stringWithFormat:@"%d", myTweet.tweetId];
+    self.tweeTextLabel.text = myTweet.text;
+    self.tweetLocationLabel.text = myTweet.location;
+    self.tweetAuthorLabel.text = myTweet.author;    
 }
 
 @end

@@ -9,14 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "user.h"
 
-@interface UserViewController : UIViewController {
+@interface UserViewController : UIViewController
 
-    __weak IBOutlet UILabel *user_date_reg_label;
-    __weak IBOutlet UILabel *user_name_label;
-    __weak IBOutlet UILabel *user_id_label;
-    __weak IBOutlet UILabel *user_photo_link_label;
-}
+@property (nonatomic, weak) IBOutlet UILabel *userDateRegLabel;
+@property (nonatomic, weak) IBOutlet UILabel *userNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *userIdLabel;
+@property (nonatomic, weak) IBOutlet UILabel *userPhotoLinkLabel;
 
--(void)ShowUserInfo:(user *)myUser;
+-(void)ShowUserInfo:(User *)myUser;
 
 @end

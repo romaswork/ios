@@ -9,16 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "tweet.h"
 
-@interface TweetViewController : UIViewController {
-    
-    __weak IBOutlet UILabel *tweet_date_create_label;
-    __weak IBOutlet UILabel *tweet_id_label;
-    __weak IBOutlet UILabel *tweet_text_label;
-    __weak IBOutlet UILabel *tweet_location_label;
-    __weak IBOutlet UILabel *tweet_author_label;
-    
-}
+@interface TweetViewController : UIViewController 
 
--(void)ShowTweet:(tweet *)myTweet;
+@property (nonatomic, weak) IBOutlet UILabel *tweetDateCreateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *tweetIdLabel;
+@property (nonatomic, weak) IBOutlet UILabel *tweeTextLabel;
+@property (nonatomic, weak) IBOutlet UILabel *tweetLocationLabel;
+@property (nonatomic, weak) IBOutlet UILabel *tweetAuthorLabel;
+
+-(void)ShowTweet:(Tweet *)myTweet;
 
 @end

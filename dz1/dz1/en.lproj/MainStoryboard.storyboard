@@ -167,11 +167,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tweet_author_label" destination="AxB-qF-FeZ" id="Qmg-8D-wVm"/>
-                        <outlet property="tweet_date_create_label" destination="iEB-M9-qB6" id="t5x-Kh-nIH"/>
-                        <outlet property="tweet_id_label" destination="GQi-7A-KjY" id="0a6-Vx-mLV"/>
-                        <outlet property="tweet_location_label" destination="hNU-Ro-fCB" id="NvC-N3-6Hz"/>
-                        <outlet property="tweet_text_label" destination="jK7-ae-Vtv" id="K0L-dG-TWb"/>
+                        <outlet property="tweeTextLabel" destination="jK7-ae-Vtv" id="sK4-IR-rQ3"/>
+                        <outlet property="tweetAuthorLabel" destination="AxB-qF-FeZ" id="Kxd-bb-Kvj"/>
+                        <outlet property="tweetDateCreateLabel" destination="iEB-M9-qB6" id="yG3-fq-z8p"/>
+                        <outlet property="tweetIdLabel" destination="GQi-7A-KjY" id="tiW-1s-sda"/>
+                        <outlet property="tweetLocationLabel" destination="hNU-Ro-fCB" id="BX6-5o-nEJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcM-xQ-Xcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -270,10 +270,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="user_date_reg_label" destination="TuH-E1-Ayf" id="EXK-nk-qdd"/>
-                        <outlet property="user_id_label" destination="0lO-md-oiL" id="k1r-7T-PAV"/>
-                        <outlet property="user_name_label" destination="0rR-hR-lfS" id="1hq-0k-r15"/>
-                        <outlet property="user_photo_link_label" destination="ZwY-FP-Yje" id="Tvj-h9-pKL"/>
+                        <outlet property="userDateRegLabel" destination="TuH-E1-Ayf" id="bPG-3o-Qy6"/>
+                        <outlet property="userIdLabel" destination="0lO-md-oiL" id="qXA-cz-jNJ"/>
+                        <outlet property="userNameLabel" destination="0rR-hR-lfS" id="tl5-cz-QwU"/>
+                        <outlet property="userPhotoLinkLabel" destination="ZwY-FP-Yje" id="h2s-4N-vgN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cjd-U9-I0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,33 +281,6 @@
             <point key="canvasLocation" x="502" y="-511"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TweetViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tweet_author_label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tweet_date_create_label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tweet_id_label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tweet_location_label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tweet_text_label" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="UserViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UserViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="user_date_reg_label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="user_id_label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="user_name_label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="user_photo_link_label" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

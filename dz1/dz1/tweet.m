@@ -8,22 +8,25 @@
 
 #import "tweet.h"
 
-@implementation tweet
+@implementation Tweet
 
--(id)init:(NSDate *)date : (NSInteger)tweet_id : (NSString *)text : (NSString *)location : (NSString *)author {
-    self.date_create = date;
-    self.tweet_id = tweet_id;
-    self.text = text;
-    self.location = location;
-    self.author = author;
+-(instancetype)init:(NSDate *)date : (NSInteger)tweetId : (NSString *)text : (NSString *)location : (NSString *)author {
+    self = [super init];
+    if(self) {
+        self.dateCreate = date;
+        self.tweetId = tweetId;
+        self.text = text;
+        self.location = location;
+        self.author = author;
+    }    
     return self;
 }
 
 -(NSString *)DateToString {
     NSDateFormatter *inFormat = [[NSDateFormatter alloc] init];
     [inFormat setDateFormat:@"MMM dd, yyyy"];
-    NSString *temp_str = [inFormat stringFromDate:self.date_create];
-    return temp_str;
+    NSString *tempStr = [inFormat stringFromDate:self.dateCreate];
+    return tempStr;
 }
 
 @end

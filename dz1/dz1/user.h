@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface user : NSObject
+@interface User : NSObject
 
-@property (nonatomic, weak) NSDate *user_date_reg;
-@property (nonatomic) NSString *user_name;
-@property (nonatomic) NSInteger user_id;
-@property (nonatomic) NSString *user_photo_link;
+@property (nonatomic, weak) NSDate *userDateReg;
+@property (nonatomic) NSString *userName;
+@property (nonatomic) NSInteger userId;
+@property (nonatomic) NSString *userPhotoLink;
 
--(id)init: (NSDate *)date_reg : (NSString *)name : (NSInteger)uid : (NSString *)photo_link;
+-(instancetype)init: (NSDate *)dateReg : (NSString *)name : (NSInteger)uid : (NSString *)photoLink;
 -(NSString *)DateToString;
 
 @end

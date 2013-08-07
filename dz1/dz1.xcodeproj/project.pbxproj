@@ -65,6 +65,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		398C470417B2A88F00C1C7BD /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				398C470517B2A8A700C1C7BD /* Storyboard */,
+			);
+			name = Resourses;
+			sourceTree = "<group>";
+		};
+		398C470517B2A8A700C1C7BD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				39E33E9117A9B0050066A3BB /* MainStoryboard.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		398C470617B2ABBF00C1C7BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39E33EA517AA2C510066A3BB /* user.h */,
+				39E33EA617AA2C510066A3BB /* user.m */,
+				3917C98617AA48CA00F85F12 /* tweet.h */,
+				3917C98717AA48CA00F85F12 /* tweet.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		398C470717B2AC0900C1C7BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				39E33E9417A9B0050066A3BB /* ViewController.h */,
+				39E33E9517A9B0050066A3BB /* ViewController.m */,
+				39E33E9C17A9B0B50066A3BB /* UserViewController.h */,
+				39E33E9D17A9B0B50066A3BB /* UserViewController.m */,
+				39E33E9F17A9B16B0066A3BB /* TweetViewController.h */,
+				39E33EA017A9B16B0066A3BB /* TweetViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		39E33E6D17A9B0050066A3BB = {
 			isa = PBXGroup;
 			children = (
@@ -97,18 +137,10 @@
 			children = (
 				39E33E8817A9B0050066A3BB /* AppDelegate.h */,
 				39E33E8917A9B0050066A3BB /* AppDelegate.m */,
-				39E33E9117A9B0050066A3BB /* MainStoryboard.storyboard */,
-				39E33E9417A9B0050066A3BB /* ViewController.h */,
-				39E33E9517A9B0050066A3BB /* ViewController.m */,
+				398C470717B2AC0900C1C7BD /* Controllers */,
+				398C470617B2ABBF00C1C7BD /* Models */,
 				39E33E8017A9B0050066A3BB /* Supporting Files */,
-				39E33E9C17A9B0B50066A3BB /* UserViewController.h */,
-				39E33E9D17A9B0B50066A3BB /* UserViewController.m */,
-				39E33E9F17A9B16B0066A3BB /* TweetViewController.h */,
-				39E33EA017A9B16B0066A3BB /* TweetViewController.m */,
-				39E33EA517AA2C510066A3BB /* user.h */,
-				39E33EA617AA2C510066A3BB /* user.m */,
-				3917C98617AA48CA00F85F12 /* tweet.h */,
-				3917C98717AA48CA00F85F12 /* tweet.m */,
+				398C470417B2A88F00C1C7BD /* Resourses */,
 			);
 			path = dz1;
 			sourceTree = "<group>";

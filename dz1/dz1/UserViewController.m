@@ -27,7 +27,7 @@
     
     [super viewDidLoad];
 	   
-    user *myUser = [[user alloc] init:[NSDate date] :@"Roman" :123 :@"/images/user.png"];
+    User *myUser = [[User alloc] init:[NSDate date] :@"Roman" :123 :@"/images/user.png"];
     [self ShowUserInfo:myUser];
 }
 
@@ -37,12 +37,12 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)ShowUserInfo:(user *)myUser {
-    
-    self->user_date_reg_label.text = [myUser DateToString];
-    self->user_name_label.text = myUser.user_name;
-    self->user_id_label.text = [NSString stringWithFormat:@"%d", myUser.user_id];
-    self->user_photo_link_label.text = myUser.user_photo_link;
+-(void)ShowUserInfo:(User *)myUser {
+
+    self.userDateRegLabel.text = [myUser DateToString];
+    self.userNameLabel.text = myUser.userName;
+    self.userIdLabel.text = [NSString stringWithFormat:@"%d", myUser.userId];
+    self.userPhotoLinkLabel.text = myUser.userPhotoLink;
     
 }
 
